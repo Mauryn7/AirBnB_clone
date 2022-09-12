@@ -1,87 +1,76 @@
-# AirBnB clone - The console
+# 0x01. AirBnB clone - Web static
 
-![hbnb_clone](https://user-images.githubusercontent.com/101478509/187341550-b4c53188-a061-4634-84e5-2bb00786c154.png)
+## Learning Objectives:bulb:
+What you should learn from this project:
 
-## Description
-
-This team project is part of the ALX School Full-Stack Software Engineer program.
-First step is to Write a command interpreter to manage the AirBnB objects.
-
----
-
-## Usage
-
-The console works much like a Unix shell.
-It prints a prompt **(hbnb)** then it awaits the user's input.
-
----
-Interactive mode example
-
-Command | Example
-------- | -------
-Run the console | ```./console.py```
-Quit the console | ```(hbnb) quit```
-Display the help for a command | ```(hbnb) help <command>```
-Create an object (console prints the ID)| ```(hbnb) create <class>```
-Show an object | ```(hbnb) show <class> <id>``` or ```(hbnb) <class>.show(<id>)```
-Destroy an object | ```(hbnb) destroy <class> <id>``` or ```(hbnb) <class>.destroy(<id>)```
-Show all objects, or all instances of a class | ```(hbnb) all``` or ```(hbnb) all <class>```
-Update an attribute of an object | ```(hbnb) update <class> <id> <attribute name> "<attribute value>"``` or ```(hbnb) <class>.update(<id>, <attribute name>, "<attribute value>")```
----
-
-Non-interactive mode example
-
-```bash
-$ echo "help" | ./console.py
-(hbnb)
-
-Documented commands (type help <topic>):
-========================================
-EOF  all  count  create  destroy  help  quit  show  update
-```
+* What is HTML
+* How to create an HTML page
+* What is a markup language
+* What is the DOM
+* What is an element / tag
+* What is an attribute
+* How does the browser load a webpage
+* What is CSS
+* How to add style to an element
+* What is a class
+* What is a selector
+* How to compute CSS Specificity Value
+* What are Box properties in CSS
 
 ---
 
-## Models
+### [0. Inline styling](./0-index.html)
+* Write an HTML page that displays a header and a footer.
+
+
+### [1. Head styling](./1-index.html)
+* Write an HTML page that displays a header and a footer by using the style tag in the head tag (same as 0-index.html)
+
+
+### [2. CSS files](./2-index.html)
+* Write an HTML page that displays a header and a footer by using CSS files (same as 1-index.html)
+
+
+### [3. Zoning done!](./3-index.html)
+* Write an HTML page that displays a header and footer by using CSS files (same as 2-index.html)
+
+
+### [4. Search!](./4-index.html)
+* Write an HTML page that displays a header, footer and a filters box with a search button.
+
+
+### [5. More filters](./5-index.html)
+* Write an HTML page that displays a header, footer and a filters box.
+
+
+### [6. It's (h)over](./6-index.html)
+* Write an HTML page that displays a header, footer and a filters box with dropdown.
+
+
+### [7. Display results](./7-index.html)
+* Write an HTML page that displays a header, footer, a filters box with dropdown and results.
+
+
+### [8. More details](./8-index.html)
+* Write an HTML page that displays a header, a footer, a filter box (dropdown list) and the result of the search.
+
+
+### [9. Full details](./100-index.html)
+* Write an HTML page that displays a header, footer, a filters box with dropdown and results.
+
+
+### [10. Flex](./101-index.html)
+* Improve the Places section by using Flexible boxes for all Place articles
+
+
+### [11. Responsive design](./102-index.html)
+* Improve the page by adding responsive design to display correctly in mobile or small screens.
+
+
+### [12. Accessibility](./103-index.html)
+* Improve the page by adding Accessibility support
 
 ---
 
-The folder [models](./models/) contains all the classes in this project.
-
-File | Description | Attributes
----- | ----------- | ----------
-[base_model.py](./models/base_model.py) | BaseModel class for all the other classes | id, created_at, updated_at
-[user.py](./models/user.py) | User class for future user information | email, password, first_name, last_name
-[amenity.py](./models/amenity.py) | Amenity class for future amenity information | name
-[city.py](./models/city.py) | City class for future location information | state_id, name
-[state.py](./models/state.py) | State class for future location information | name
-[place.py](./models/place.py) | Place class for future accomodation information | city_id, user_id, name, description, number_rooms, number_bathrooms, max_guest, price_by_night, latitude, longitude, amenity_ids
-[review.py](./models/review.py) | Review class for future user/host review information | place_id, user_id, text
-
----
-
-## File storage
-
----
-
-The file path [engine](./models/engine/) manages the serialization and deserialization of all the data, following a JSON format.
-
-A FileStorage class is defined in [file_storage.py](./models/engine/file_storage.py) with methods to follow this flow:
-```<object> -> to_dict() -> <dictionary> -> JSON dump -> <json string> -> FILE -> <json string> -> JSON load -> <dictionary> -> <object>```
-
-The [__init__.py](./models/__init__.py) file contains the instantiation of the FileStorage class called **storage**, followed by a call to the method reload() on that instance.
-This allows the storage to be reloaded automatically at initialization, which recovers the serialized data.
-
----
-
-## Tests
-
----
-
-All the code is tested with the **unittest** module.
-The test for the classes are in the [test_models](./tests/test_models/) folder.
-
-## Contributors
-
-- Collins oden <collinsoden22@gmail.com>
-- Maureen Mbugua <moryn.mbugua@gmail.com>
+## Author
+* **Maureen Njeri** 
